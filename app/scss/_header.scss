@@ -25,13 +25,53 @@
 			top: -10px;
 		}
 	}
+	&__bottom {
+		margin-bottom: 78px;
+	}
 }
 .menu {
 	&__item {
 		display: inline-block;
-
 		& + .menu__item {
 			padding-left: 50px;
+		}
+	}
+	&-categories {
+		background-color: #F0F0F4;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 53px;
+		&__item {
+			position: relative;
+		}
+		&__link {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: all .3s;
+			font-weight: 400;
+			padding: 15px 0 14px;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 0;
+				left: auto;
+				right: 0;
+				bottom: -2px;
+				background-color: #1C62CD;
+				height: 3px;	
+				transition: all .3s;
+			}
+			&:hover {
+				color: #000;
+			}
+			&:hover::before {
+				width: 100%;
+				right: auto;
+				left: 0;
+			}
 		}
 	}
 }
