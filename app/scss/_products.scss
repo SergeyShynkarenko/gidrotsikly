@@ -1,8 +1,78 @@
 .products {
+	&-item__wrapper {
+		position: relative;
+		width: 271px;
+	}
 	&-item {
 		border: 1px solid #CDCDCD;
 		border-radius: 3px;
-		position: relative;
 		text-align: center;
+		padding: 52px 20px 31px;
+		transition: all .3s;
+		&:hover {
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+			color: #1C62CD;
+		}
+		&:hover {
+			.products-item__hover-text {
+				opacity: 1;
+				color: #2F3035;
+			}
+		}
+		&__hover-text {
+			padding: 18px 21px;
+			background-color: rgba(255,255,255,.9);
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+			border-radius: 3px;
+			display: inline-block;
+			position: absolute;
+			top: 30%;
+			opacity: 0;
+			transition: all .3s;
+		}
+		&__title {
+			font-weight: normal;
+			padding: 14px 0 25px;
+		}
+		&__favorite {
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			width: 24px;
+			height: 22px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			z-index: 5;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 24px;
+				height: 22px;
+				top: 0;
+				left: 0;
+				background-image: url('../images/dest/favorite.svg');
+			}
+			&--active {
+				background-image: url('../images/dest/favorite-active.svg');
+			}
+		}
+		&__basket {
+			position: absolute;
+			width: 60px;
+			height: 40px;
+			background-color: #1C62CD;
+			border-radius: 10px 0px 0px 0px;
+			border: none;
+			bottom: 0;
+			right: 0;
+			padding-top: 7px;
+			cursor: pointer;
+		}
+		&__price {
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 36px;
+		}
 	}
 }
