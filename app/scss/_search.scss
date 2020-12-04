@@ -10,12 +10,6 @@
 		background: #F0F0F4;
 		font-weight: 700;
 	}
-	&__content-item {
-		display: none;
-	}
-	&__content-item.tabs-content--active {
-			display: block;
-	}
 	&__content-form {
 		display: flex;
 	}
@@ -44,4 +38,10 @@
 		margin-left: -3px;
 		border: none;
 	}
+}
+.tabs-content {
+	display: none;
+}
+.tabs-content.tabs-content--active {
+		display: block;
 }
