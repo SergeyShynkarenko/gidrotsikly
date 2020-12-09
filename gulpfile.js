@@ -13,6 +13,9 @@ let paths = {
 			// 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
 			baseDir + '/libs/jquery/jquery-3.5.1.min.js',
 			baseDir + '/libs/slick/slick.min.js',
+			baseDir + '/libs/formStyler/jquery.formstyler.min.js',
+			baseDir + '/libs/rangeSlider/ion.rangeSlider.min.js',
+			baseDir + '/libs/rateYo/jquery.rateyo.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',

@@ -28,4 +28,11 @@ $(function(){
 		nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/dest/arrow-black-right.svg" alt=""></button>',
 	});
 
+	$('.filter-style').styler();
+
+	$('.filter__item-drop').on('click', function(){
+		$(this).toggleClass('filter__item-drop--active');
+		$(this).next().slideToggle('200');
+	});
+
 });
