@@ -25,6 +25,13 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 50px;
+		&-btngrid {
+		width: 26px;
+		height: 21px;
+		}
+		&-btnline {
+
+		}
 		&-items {
 			button {
 				font-size: 14px;
@@ -54,6 +61,13 @@
 			}
 		}
 	}
+}
+.select-item {
+	border: 1px solid #D7D9DF;
+	font-size: 14px;
+	line-height: 17px;
+	margin-right: 34px;
+	padding: 7px 10px 7px 20px;
 }
 .products-item__img {
 	max-width: 100%;
@@ -377,6 +391,61 @@
 		display: none;
 	}
 }
+
+// button
+.filter-btn__send {
+	background: #F0F0F4;
+	padding: 16px 85px;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.12em;
+	color: #BDBEC2;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 15px;
+	&--active {
+		background-color: #1C62CD;
+		color: #fff;
+	}
+}
+.aside-filter__item-btn {
+	text-align: center;
+}
+.filter__extra {
+	font-size: 13px;
+	line-height: 16px;
+	position: relative;
+	padding-right: 29px;
+	display: inline-block;
+	margin-bottom: 15px;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 12px;
+		height: 8px;
+		right: 0;
+		top: 4px;
+		background-image: url('../images/dest/arrow.svg');
+	}
+	&-content {
+		display: none;
+	}
+}
+.filter__extra.filter__item-drop--active::after {
+	transform: rotate(180deg);
+}
+.filter-btn__reset {
+	display: inline-block;
+	font-size: 13px;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	line-height: 16px;
+	border-bottom: 1px solid #C4C4C4;
+	color: #C4C4C4;
+}
+
 
 
 
