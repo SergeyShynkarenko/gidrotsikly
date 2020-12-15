@@ -1,0 +1,118 @@
+.product-card {
+	margin-bottom: 80px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__img-box {
+		position: relative;
+		width: 500px;
+		padding-top: 64px;
+		text-align: center;
+		font-family: 'Barlow', sans-serif;
+		&::before {
+			line-height: 18px;
+			font-size: 15px;
+			letter-spacing: 0.12em;
+			padding: 13px 25px;
+			border-radius: 3px;
+		}
+	}
+	&__content {
+		width: 570px;
+	}
+	&__price-old {
+		display: inline-block;
+		font-size: 30px;
+		line-height: 44px;
+		opacity: 0.6;
+		background-image: url('../images/dest/old-line.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__price-new {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 17px;
+	}
+	&__link {
+		border-bottom: 1px solid #1C62CD;
+		font-size: 15px;
+		line-height: 18px;
+		color: #1C62CD;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+	&__code {
+		font-size: 15px;
+		line-height: 18px;
+		color: #2F3035;
+		opacity: 0.6;
+		margin-bottom: 22px;
+	}
+	&__buttons {
+		margin-bottom: 50px;
+		a + a {
+			margin-left: 30px;
+		}
+	}
+	&__tab {
+		font-size: 20px;
+		padding-bottom: 5px;
+		color: #2F3035;
+		opacity: 0.6;
+		line-height: 24px;
+		padding-right: 17px;
+		margin-bottom: 5spx;
+		.tab--active {
+			font-weight: bold;
+			opacity: 1;
+			border-bottom: 2px solid #1C62CD;
+		}
+		& + .product-card__tab {
+			padding-left: 17px;
+		}
+	}
+	&__item {
+		padding: 15px 0 6px;
+		border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+		display: flex;
+		justify-content: space-between;		
+		&-left {
+			padding-right: 15px;
+		}
+		&-right {
+			width: 125px;
+		}
+	}
+	&__more {
+		font-size: 14px;
+		color: #1C62CD;
+		line-height: 17px;
+		border-bottom: 1px solid #1C62CD;
+		margin-bottom: 40px;
+	}
+	&__list {
+		margin-bottom: 20px;
+	}
+	&__btn {
+		button {
+			font-size: 14px;
+			line-height: 17px;
+			align-items: center;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #fff;
+			padding: 16px 56px;
+			background: #1C62CD;
+			border-radius: 3px;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}
