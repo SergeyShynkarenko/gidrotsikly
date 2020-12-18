@@ -71,6 +71,37 @@
 			}
 		}
 	}
+	&-mobile {
+		&__list {
+			width: 243px;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+			transform: translateX(-100%);
+			transition: all .3s;
+			position: absolute;
+			z-index: 10;
+			background-color: #fff;
+			&--active {
+				transform: translateX(0%);
+			}
+		}
+
+		&__item {
+			position: relative;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		&__link {
+			display: block;
+			padding-left: 53px;
+			padding-top: 36px;
+		}
+		&__img {
+			position: absolute;
+			left: 11px;
+		}
+	}
+}
+.menu__mobile-linewrapper{
+	display: none;
 }
 .user-list {
 	margin-right: 15px;
