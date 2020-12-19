@@ -193,10 +193,25 @@
 			background: #F0F0F4;
 			padding: 16px 43px;
 		}
-	}
+	}	
 }
 .slick-slide {
 	img {
 		display: inline;
+	}
+}
+
+// dotsv
+.products-slider {
+	.slick-dots {
+		bottom: -30px;
+		button {
+			background-color: #C4C4C4;
+		}
+		.slick-active {
+			button {
+				background-color: #1C62CD;
+			}
+		}
 	}
 }

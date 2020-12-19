@@ -49,13 +49,11 @@
 			border-radius: 50%;
 			background-color: transparent;
 		}
-	}
-	&-active {
-		li {
+		.slick-active {
 			button {
 				background-color: #fff;
 			}
-		}	
+		}
 	}
 }
 .sale-item {

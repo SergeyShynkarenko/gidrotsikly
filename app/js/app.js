@@ -6,6 +6,14 @@ $(function(){
   	slidesToShow: 1,
 		prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/dest/arrow-left.svg" alt=""></button>',
 		nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/dest/arrow-right.svg" alt=""></button>',
+			responsive: [
+		    {
+		      breakpoint: 969,
+		      settings: {
+		      	arrows: false
+		      }
+	    	}
+	    ]
 	});
 
 // tabs
@@ -29,6 +37,36 @@ $(function(){
 		slidesToScroll: 1,
 		prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/dest/arrow-black-left.svg" alt=""></button>',
 		nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/dest/arrow-black-right.svg" alt=""></button>',
+			responsive: [
+			  {
+			    breakpoint: 1301,
+			    settings: {
+			    	arrows: false,
+			    	dots: true,
+			     }
+		    },
+		    {
+			    breakpoint: 1201,
+			    settings: {
+			    	slidesToShow: 3,
+			    	dots: true
+			     }
+		    },
+		    {
+			    breakpoint: 870,
+			    settings: {
+			    	slidesToShow: 2,
+			    	dots: true
+			     }
+		    },
+		    {
+			    breakpoint: 590,
+			    settings: {
+			    	slidesToShow: 1,
+			    	dots: true
+			     }
+		    }
+		  ]
 	});
 
 	$('.filter-style').styler();
