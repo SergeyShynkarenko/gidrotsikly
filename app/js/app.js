@@ -49,6 +49,7 @@ $(function(){
 			    breakpoint: 1201,
 			    settings: {
 			    	slidesToShow: 3,
+			    	arrows: false,
 			    	dots: true
 			     }
 		    },
@@ -56,6 +57,7 @@ $(function(){
 			    breakpoint: 870,
 			    settings: {
 			    	slidesToShow: 2,
+			    	arrows: false,
 			    	dots: true
 			     }
 		    },
@@ -63,6 +65,7 @@ $(function(){
 			    breakpoint: 590,
 			    settings: {
 			    	slidesToShow: 1,
+			    	arrows: false,
 			    	dots: true
 			     }
 		    }
@@ -104,5 +107,11 @@ $(function(){
   $('.menu__btn').on('click', function(){
   	$('.menu-mobile__list').toggleClass('menu-mobile__list--active')
   })
+
+// footer
+  $('.footer__topdrop').on('click', function(){
+  	$(this).next().slideToggle();
+  	$(this).toggleClass('footer__topdrop--active');
+  });
 
 });
