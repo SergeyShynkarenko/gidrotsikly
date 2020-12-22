@@ -19,14 +19,7 @@
 	&__tabs {
 		margin-bottom: 25px;
 	}
-	&-item__wrapper {
-		position: relative;
-		width: 271px;
-		transition: all .3s;
-		&--list {
-			width: 100%;
-		}
-	}
+
 	&-slider {
 		&__slider-btn {
 			position: absolute;
@@ -66,6 +59,17 @@
 			.products-item__notify-text {
 				color: #2F3035;
 			}
+		}
+		&__wrapper {
+			position: relative;
+			width: 271px;
+			transition: all .3s;
+			&--list {
+				width: 100%;
+			}
+		}
+		&__img {
+			max-width: 100%;
 		}
 		&--sale::before {
 			content: 'SALE';
@@ -197,7 +201,7 @@
 	}
 }
 
-// dotsv
+// dots
 .products-slider {
 	.slick-dots {
 		bottom: -30px;
