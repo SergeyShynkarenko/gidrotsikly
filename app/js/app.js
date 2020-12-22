@@ -34,6 +34,7 @@ $(function(){
 		$(this).toggleClass('products-item__favorite--active')
 	});
 
+// slider
 	$('.products-slider').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
